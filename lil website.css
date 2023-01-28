@@ -1,0 +1,89 @@
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+.navbar ul li {
+    display: inline-block;
+    margin: 0 80px;
+    color: white;
+    position: relative;
+    list-style: none;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after {
+    width: 100%;
+}
+.content {
+    text-align: center;
+    color: white;
+}
+.content h1 {
+    font-size: 70px;
+    margin-top: 10px;
+}
+button {
+    border: 2px solid #009688;
+    border-radius: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 25px 15px;
+    background: transparent;
+    color: white;
+    font-size: medium;
+    font-style: italic;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: relative;
+    
+}
+span {
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    border-radius: 25px;
+    position: absolute;
+    color: #009688;
+    transition: 0.5s;
+    
+
+}
+button :hover span {
+    width: 100%;
+}
+button:hover {
+    border: none;
+} 
